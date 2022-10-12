@@ -2,11 +2,10 @@
 	<div>
 		<div class="nv-navbar">
 			<ul class="nav">
-				<li><router-link :to="{ name: 'blogs' }">Blogs</router-link></li>
-				<li><router-link :to="{ name: 'users' }">Users</router-link></li>
-				<li><router-link :to="{ name: 'comments' }">Comments</router-link></li>
-				<li><router-link :to="{ name: 'login' }">Login</router-link></li>
-				<li><router-link :to="{ name: 'blogs' }">Blogs</router-link></li>
+				<li><router-link :to="{ name: 'phitsanuloks' }">สถานที่ท่องเที่ยวพิษณุโลก</router-link></li>
+				<li><router-link :to="{ name: 'users' }">ผู้ใช้งาน</router-link></li>
+				<!-- <li><router-link :to="{ name: 'comments' }">ความคิดเห็น</router-link></li> -->
+				<li><router-link :to="{ name: 'login' }">ลงชื่อเข้าใช้</router-link></li>
 			</ul>
 			<div class="clearfix" />
 		</div>
@@ -17,7 +16,7 @@ export default {};
 </script>
 <style scoped>
 .nv-navbar {
-	background-color: palegoldenrod;
+	background-color: rgb(137, 219, 178);
 	width: 100%;
 	padding: 10px 0px 10px 0px;
 }

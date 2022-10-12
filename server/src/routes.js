@@ -3,7 +3,8 @@ const UserAuthenController = require('./controllers/UserAuthenController');
 const isAuthenController = require('./authen/isAuthenController')
 const BlogController = require('./controllers/BlogController');
 const Blog = require('./models/Blog.js');
-
+const PhitsanulokController = require('./controllers/PhitsanulokController');
+const Phitsanulok = require('./models/Phitsanulok.js');
 let multer = require("multer")
 
 // upload section
@@ -32,6 +33,13 @@ module.exports = (app) => {
     app.delete('/blog/:blogId', BlogController.remove)
     app.get('/blog/:blogId', BlogController.show)
     app.get('/blogs', BlogController.index)
+    
+    app.post('/phitsanulok', PhitsanulokController.create)
+    app.put('/phitsanulok/:phitsanulokId', PhitsanulokController.put)
+    app.delete('/phitsanulok/:phitsanulokId', PhitsanulokController.remove)
+    app.get('/phitsanulok/:phitsanulokId', PhitsanulokController.show)
+    app.get('/phitsanuloks', PhitsanulokController.index)
+    
     app.post('/upload', function (req, res) {
         upload(req, res, function (err) {
             // isUserAuthenicated,

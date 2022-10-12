@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Get All Users</h1>
+  <div class="center">
+    <h1>ชื่อผู้ใช้ทั้งหมด</h1>
     <div v-if="users.length">
       <h4>จำนวนผู้ใช้งาน {{ users.length }}</h4>
       <p>
@@ -76,4 +76,10 @@ export default {
 };
 </script>
 <style scoped>
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
 </style>

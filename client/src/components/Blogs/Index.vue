@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="center">
 		<h2>Get all blogs</h2>
 		<p><button v-on:click="logout">Logout</button></p>
 		<h4>จํานวน blog {{ blogs.length }}</h4>
@@ -61,4 +61,7 @@ export default {
 };
 </script>
 <style scoped>
+center{
+	margin-left: 20px;
+}
 </style>

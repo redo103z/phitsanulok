@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <h1>User Login</h1>
+  <div class="center">
+    <h1>เข้าสู่ระบบ </h1>
     <form v-on:submit.prevent="onLogin">
-      <p>Username: <input type="text" v-model="email" /></p>
-      <p>Password: <input type="password" v-model="password" /></p>
-      <p><button type="submit">Login</button></p>
+      <p>ชื่อผู้ใช้ : <input type="text" v-model="email" /></p>
+      <p>รหัสผ่าน : <input type="password" v-model="password" /></p>
+      <p><button type="submit">ยืนยัน</button></p>
       <div class="error" v-if="error">{{error}}</div>
     </form>
   </div>
@@ -49,4 +49,10 @@ export default {
   .error{
     color:red;
   }
+  .center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
 </style>

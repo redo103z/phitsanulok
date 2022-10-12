@@ -13,6 +13,11 @@ import BlogCreate from '@/components/Blogs/CreateBlog'
 import BlogEdit from '@/components/Blogs/EditBlog'
 import BlogShow from '@/components/Blogs/ShowBlog'
 
+import PhitsanulokIndex from '@/components/Phitsanuloks/Index'
+import PhitsanulokCreate from '@/components/Phitsanuloks/CreatePhitsanulok'
+import PhitsanulokEdit from '@/components/Phitsanuloks/EditPhitsanulok'
+import PhitsanulokShow from '@/components/Phitsanuloks/ShowPhitsanulok'
+
 import CommentIndex from '@/components/Comments/Index'
 
 import Upload from '@/components/Utils/Upload'
@@ -66,6 +71,28 @@ export default new Router({
       name: 'blog',
       component: BlogShow
     },
+
+    {
+      path: '/phitsanuloks',
+      name: 'phitsanuloks',
+      component: PhitsanulokIndex
+    },
+    {
+      path: '/phitsanulok/create',
+      name: 'phitsanulok-create',
+      component: PhitsanulokCreate
+    },
+    {
+      path: '/phitsanulok/edit/:phitsanulokId',
+      name: 'phitsanulok-edit',
+      component: PhitsanulokEdit
+    },
+    {
+      path: '/phitsanulok/:phitsanulokId',
+      name: 'phitsanulok',
+      component: PhitsanulokShow
+    },
+
     {
       path: '/comments',
       name: 'comments',
